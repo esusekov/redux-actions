@@ -37,6 +37,7 @@ export default function createAction(type, payloadCreator = identity, metaCreato
   };
 
   actionCreator.toString = () => typeString;
+  actionCreator.type = typeString;
 
   return actionCreator;
 }
